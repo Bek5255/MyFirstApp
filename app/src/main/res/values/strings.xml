@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
+    <string name="samsumg">Samsung</string>
+    <string name="apple">Apple</string>
+    <string name="xiomi">Xiomi</string>
+    <string name="nokia">Nokia</string>
+    <string name="sony">Sony</string>
+    <string name="motorola">Motorola </string>
+    <string name="lenovo">Lenovo</string>
+    <string name="huawei">Huawei</string>
+    <string name="lg">LG</string>
+    <string-array name="brends">
+        <item>Samsung</item>
+        <item>Apple</item>
+        <item>Xiomi</item>
+        <item>Nokia</item>
+        <item>Sony</item>
+        <item>Motorola</item>
+        <item>Lenovo</item>
+        <item>Huawei</item>
+        <item>LG</item>
+    </string-array>
+
 </resources>
