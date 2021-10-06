@@ -12,22 +12,21 @@
         android:orientation="vertical">
 
         <ImageButton
-            android:id="@+id/samsung"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/samsumg"
-            android:scaleType="centerInside"
-            android:src="@drawable/samsung"
-            android:onClick="listner"/>
-
-        <ImageButton
             android:id="@+id/apple"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="centerInside"
             android:src="@drawable/apple" />
+
+        <ImageButton
+            android:id="@+id/samsung"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/samsung"
+            android:text="@string/samsumg" />
 
         <ImageButton
             android:id="@+id/xiomi"
@@ -68,6 +67,14 @@
             android:layout_weight="1"
             android:scaleType="centerInside"
             android:src="@drawable/lenovo" />
+
+        <ImageButton
+            android:id="@+id/huawei"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/huawei" />
 
         <ImageButton
             android:id="@+id/lg"
