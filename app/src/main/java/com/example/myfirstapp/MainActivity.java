@@ -9,9 +9,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    ImageView resultImage;
-    TextView resultText;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
     ImageButton samsung;
     ImageButton apple;
     ImageButton xiomi;
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton lenovo;
     ImageButton huawei;
     ImageButton lg;
-
+    String brend;
 
     @Override
 
@@ -38,58 +37,52 @@ public class MainActivity extends AppCompatActivity {
         huawei = (ImageButton) findViewById(R.id.huawei);
         lg = (ImageButton) findViewById(R.id.lg);
 
-        View.OnClickListener onClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (view.getId()){
-                    case R.id.samsung:
-                        resultImage.setImageResource(R.drawable.samsung);
-                        resultText.setText(R.string.samsumg_text);
-                        break;
-
-                    case R.id.apple:
-                        resultImage.setImageResource(R.drawable.apple);
-                        resultText.setText(R.string.apple_text);
-                        break;
-
-                    case R.id.nokia:
-                        resultImage.setImageResource(R.drawable.nokia);
-                        resultText.setText(R.string.nokia_text);
-                        break;
-
-                    case R.id.xiomi:
-                        resultImage.setImageResource(R.drawable.xiomi);
-                        resultText.setText(R.string.xiomi_text);
-                        break;
-
-                    case R.id.sony:
-                        resultImage.setImageResource(R.drawable.sony);
-                        resultText.setText(R.string.sony_text);
-                        break;
-
-                    case R.id.motorola:
-                        resultImage.setImageResource(R.drawable.motorola);
-                        resultText.setText(R.string.motorola_text);
-                        break;
-
-                    case R.id.lenovo:
-                        resultImage.setImageResource(R.drawable.lenovo);
-                        resultText.setText(R.string.lenovo_text);
-                        break;
-                }
-            }
-        };
-
-        samsung.setOnClickListener(onClickListener);
-        apple.setOnClickListener(onClickListener);
-        xiomi.setOnClickListener(onClickListener);
-        nokia.setOnClickListener(onClickListener);
-        sony.setOnClickListener(onClickListener);
-        motorola.setOnClickListener(onClickListener);
-        lenovo.setOnClickListener(onClickListener);
-        huawei.setOnClickListener(onClickListener);
-        lg.setOnClickListener(onClickListener);
+        samsung.setOnClickListener(this);
+        apple.setOnClickListener(this);
+        xiomi.setOnClickListener(this);
+        nokia.setOnClickListener(this);
+        sony.setOnClickListener(this);
+        motorola.setOnClickListener(this);
+        lenovo.setOnClickListener(this);
+        huawei.setOnClickListener(this);
+        lg.setOnClickListener(this);
 
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.samsung:
+                brend = getString(R.string.samsumg_text);
+                break;
+            case R.id.apple:
+                brend = getString(R.string.apple_text);
+                break;
+            case R.id.xiomi:
+                brend = getString(R.string.xiomi_text);
+                break;
+            case R.id.nokia:
+                brend = getString(R.string.nokia_text);
+                break;
+            case R.id.sony:
+                brend = getString(R.string.sony_text);
+                break;
+            case R.id.motorola:
+                brend = getString(R.string.motorola_text);
+                break;
+            case R.id.lenovo:
+                brend = getString(R.string.lenovo_text);
+                break;
+            case R.id.huawei:
+                brend = getString(R.string.huawei_text);
+                break;
+            case R.id.lg:
+                brend = getString(R.string.lg_text);
+                break;
+
+        }
+        Intent intent = new Intent(this, ResultActivity.class);
+        intent.putExtra("brend", brend);
+        startActivity(intent);
+    }
 }
