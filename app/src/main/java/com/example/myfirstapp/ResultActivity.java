@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -43,6 +44,14 @@ public class ResultActivity extends AppCompatActivity {
 
     }
 
+    public void onClickNextActivity(View view) {
+        Intent intent = new Intent(this, MaketRed.class);
+        startActivity(intent);
+    }
+    public void onClickMorningActivity(View view) {
+        Intent intent = new Intent(this, MorningActivity.class);
+        startActivity(intent);
+    }
 }
 
 
