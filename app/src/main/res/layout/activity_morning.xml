@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MorningActivity">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,9 +15,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            style="EmptyTextView"
             android:layout_weight="3" />
 
         <LinearLayout
@@ -29,23 +26,15 @@
 
             <TextView
                 android:id="@+id/morning"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewLargeStyle"
                 android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:text="@string/morning"
-                android:textColor="@color/white"
-                android:textSize="14pt" />
+                android:text="@string/morning" />
 
             <TextView
                 android:id="@+id/morningC"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewTemperatureStyle"
                 android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:text="@string/_1"
-                android:textColor="@color/white"
-                android:textSize="18pt" />
+                android:text="@string/_1" />
 
         </LinearLayout>
 
@@ -74,45 +63,27 @@
 
             <TextView
                 android:id="@+id/day"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewLargeStyle"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="@string/day"
-                android:textColor="@color/white"
-                android:textSize="14pt" />
+                android:text="@string/day" />
 
             <TextView
                 android:id="@+id/day_c"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewTemperatureStyle"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="@string/_3"
-                android:textColor="@color/white"
-                android:textSize="18pt" />
+                android:text="@string/_3" />
 
             <TextView
                 android:id="@+id/day_info"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewTemperatureStyle"
                 android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:text="@string/mostly_nsunny"
-                android:textColor="@color/white"
-                android:textSize="18pt" />
+                android:text="@string/mostly_nsunny" />
 
             <TextView
                 android:id="@+id/day_params"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewSmallStyle"
                 android:layout_weight="2"
-                android:gravity="top|left"
-                android:text="Wind: N5 mph\nhummidity:45%"
-                android:textColor="@color/white"
-                android:textSize="8pt"
-                tools:ignore="HardcodedText" />
-
+                android:text="@string/wind_n5_mph_nhummidity_45" />
 
         </LinearLayout>
 
@@ -126,10 +97,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/emptiy_evining"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3" />
+            style="EmptyTextView"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -139,23 +109,15 @@
 
             <TextView
                 android:id="@+id/evening"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewLargeStyle"
                 android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:text="@string/evening"
-                android:textColor="@color/white"
-                android:textSize="14pt" />
+                android:text="@string/evening" />
 
             <TextView
                 android:id="@+id/eveningC"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewTemperatureStyle"
                 android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:text="0°"
-                android:textColor="@color/white"
-                android:textSize="18pt" />
+                android:text="@string/_0" />
 
         </LinearLayout>
 
@@ -169,10 +131,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/empty"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3" />
+            style="EmptyTextView"
+            android:layout_weight="3"
+            tools:ignore="NestedWeights" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -182,23 +143,15 @@
 
             <TextView
                 android:id="@+id/night"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewLargeStyle"
                 android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:text="@string/night"
-                android:textColor="@color/white"
-                android:textSize="14pt" />
+                android:text="@string/night" />
 
             <TextView
                 android:id="@+id/nightC"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/TextViewTemperatureStyle"
                 android:layout_weight="2"
-                android:gravity="center_vertical"
-                android:text="@string/_2"
-                android:textColor="@color/white"
-                android:textSize="18pt" />
+                android:text="@string/_2" />
 
         </LinearLayout>
 

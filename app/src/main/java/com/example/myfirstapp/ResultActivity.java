@@ -38,9 +38,9 @@ public class ResultActivity extends AppCompatActivity {
             resultImage.setImageResource(R.drawable.lenovo);
         } else if (intent.getStringExtra("brend").equals(getString(R.string.huawei_text))) {
             resultImage.setImageResource(R.drawable.huawei);
-        } else { resultImage.setImageResource(R.drawable.lg);
+        } else {
+            resultImage.setImageResource(R.drawable.lg);
         }
-
 
     }
 
@@ -48,6 +48,7 @@ public class ResultActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MaketRed.class);
         startActivity(intent);
     }
+
     public void onClickMorningActivity(View view) {
         Intent intent = new Intent(this, MorningActivity.class);
         startActivity(intent);

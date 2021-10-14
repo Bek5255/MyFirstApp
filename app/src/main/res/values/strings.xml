@@ -31,6 +31,9 @@
     <string name="evening">EVENING</string>
     <string name="night">NIGHT</string>
     <string name="_2">-2°</string>
+    <string name="_0">0°</string>
+    <string name="todo">TODO</string>
+    <string name="wind_n5_mph_nhummidity_45">Wind: N5 mph\nhummidity:45%</string>
     <string-array name="brends">
         <item>Samsung</item>
         <item>Apple</item>
