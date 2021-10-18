@@ -53,6 +53,15 @@ public class ResultActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MorningActivity.class);
         startActivity(intent);
     }
+    public void onClickHumansActivity(View view) {
+        Intent intent = new Intent(this, HumansList.class);
+        startActivity(intent);
+    }
+
+    public void onClickFreelancerActivity(View view) {
+        Intent intent = new Intent(this, Freelancer.class);
+        startActivity(intent);
+    }
 }
 
 

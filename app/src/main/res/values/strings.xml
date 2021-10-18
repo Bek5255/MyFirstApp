@@ -13,7 +13,6 @@
     <string name="light_bulb">Light Bulb</string>
     <string name="t8">15T8</string>
     <string name="themes_editor">Themes Editor</string>
-
     <string name="samsumg_text">По мнению многих пользователей, Samsung Galaxy – это самый лучший смартфон по ряду показателей, таких как производительность, функциональность, надежность и пр. Samsung выпускает самые лучшие экраны, и в целом оснащение флагманов самое топовое.</string>
     <string name="apple_text">Если вы не стеснены в деньгах, выбрать Apple имеет смысл по ряду причин. Эти смартфоны одни из самых мощных, в плане качества начинки им тоже сложно найти равных. Причем это касается всего, начиная от камеры, и заканчивая аудиочипом. Кроме того, их дизайн стал предметом для подражания. Поэтому IPhone уже многие годы является настоящей легендой.</string>
     <string name="xiomi_text">По количеству продаж Xiaomi составляет большую конкуренцию таким гигантам, как Apple и Samsung. Основное достоинство этих телефонов – высокая производительность и доступность. Они обладают хорошо себя зарекомендовавшей оболочкой MIUI, полюбившейся миллионам пользователей. Помимо основной линейки, компания выпускает телефоны под более бюджетным суббрендом Redmi.</string>
@@ -34,6 +33,12 @@
     <string name="_0">0°</string>
     <string name="todo">TODO</string>
     <string name="wind_n5_mph_nhummidity_45">Wind: N5 mph\nhummidity:45%</string>
+    <string name="_185_followers">185 followers</string>
+    <string name="no_followers">no followers</string>
+    <string name="_45_followers">45 followers</string>
+    <string name="danielle_kim">Danielle Kim</string>
+    <string name="dirk_riese">Dirk Riese</string>
+    <string name="deborah_kim">Deborah Kim</string>
     <string-array name="brends">
         <item>Samsung</item>
         <item>Apple</item>

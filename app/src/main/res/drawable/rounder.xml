@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="false">
-        <shape android:shape="oval">
+        <shape android:layout_width="600dp" android:layout_height="600dp" android:shape="oval">
             <solid  />
             <stroke android:width="4dip" android:color="@color/white" />
         </shape>
     </item>
     <item android:state_pressed="true">
-        <shape android:layout_width="match_parent" android:layout_height="wrap_content" android:shape="oval">
+        <shape android:layout_width="600dp" android:layout_height="600dp" android:shape="oval">
             <solid android:color="@color/purple_700" />
             <stroke android:width="10dp" android:color="@color/white" />
         </shape>
